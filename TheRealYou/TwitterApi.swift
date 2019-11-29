@@ -8,7 +8,12 @@
 
 import Foundation
 
+/**
+ User timeline path api
+ */
 fileprivate let timelineApiUrl = "https://api.twitter.com/1.1/statuses/user_timeline.json?"
+
+
 
 /**
  This function takes the handle of a twitter user and returns an array of tweets containing up to  3000 of their
@@ -23,11 +28,11 @@ func fetchRecentTweets(fromHandle handle: String, numberOfTweets count: Int = 30
     
     // create URL and the HTTP request
     let apiUrl = "\(timelineApiUrl)screen_name=\(handle)&count=\(count)"
-    guard let url = URL(string: apiUrl) else { return tweets }
-    var request = URLRequest(url: url)
+    guard let requestUrl = URL(string: apiUrl) else { return tweets }
+    var request = URLRequest(url: requestUrl)
     request.addValue(twitterBearerToken, forHTTPHeaderField: "Authorization")
     
-    // make request and force block using a semaphore
+    // make request and force thread blocking using a semaphore
     let semaphore = DispatchSemaphore(value: 0)
     URLSession.shared.dataTask(with: request) { (data, res, err) in
         guard let data = data else { semaphore.signal(); return } // unwrap the data
@@ -48,7 +53,7 @@ func fetchRecentTweets(fromHandle handle: String, numberOfTweets count: Int = 30
         
     }.resume()
     
-    // return the tweets
+    //wait for data then return the tweets
     semaphore.wait()
     return tweets
 }
