@@ -10,30 +10,42 @@ import Foundation
 import PersonalityInsights // this is the IBM Watson
 
 
-
-func fetchPersonalityInsightsFromTweets(_ tweets: [Tweet]) {
+/**
+ Fetches personality insights using tweets gained from a users timeline
+ The function utilizes IBM Watson's AI to generate a Profile containing derived information
+ from the tweets. If there is an error in getting the profile from Watson, then nil will be returned
+ from the function. Otherwise, the generated profile will be returned.
+ 
+ @Param: tweets - array of tweets
+ @Return - profile generated from users tweets
+ */
+func fetchPersonalityInsightsFromTweets(_ tweets: [Tweet]) -> Profile? {
+    var resultProfile: Profile?
+    
     let authenticator = WatsonIAMAuthenticator(apiKey: "\(watsonApiKey)")
     let personalityInsights = PersonalityInsights(version: "2017-10-13", authenticator: authenticator)
     personalityInsights.serviceURL = "https://gateway-wdc.watsonplatform.net/personality-insights/api"
-
-    // they were reading from a file
-    //let url = Bundle.main.url(forResource: "profile", withExtension: "json")!
-    //let content = try JSONDecoder().decode(Content.self, from: Data(contentsOf: url))
-    var contentArray = [ContentItem]()
-    for tweet in tweets {
-        contentArray.append(ContentItem(content: tweet.content, contenttype: tweet.contenttype, language: tweet.language))
-    }
-    let content = Content(contentItems: contentArray)
-
-    // probably want to add blocking to ensure the linear concurrency
+    
+    // map tweets into a content array and create Content from it
+    let content = Content(contentItems:  tweets.map { ContentItem(content: $0.content, contenttype: $0.contenttype, language: $0.language) })
+    let semaphore = DispatchSemaphore(value: 0)
+    
     personalityInsights.profile(profileContent: ProfileContent.content(content)) {
-      response, error in
-
-      guard let profile = response?.result else {
-        print(error?.localizedDescription ?? "unknown error")
-        return
-      }
-
-      print(profile)
+        response, error in
+        
+        guard let profile = response?.result else {
+            print(error?.localizedDescription ?? "unknown error")
+            semaphore.signal()
+            return
+        }
+        
+        // update the result, and signla completion
+        resultProfile = profile
+        print(profile)
+        semaphore.signal()
     }
+    
+    // wait for insights and return profile
+    semaphore.wait()
+    return resultProfile
 }
