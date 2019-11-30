@@ -37,14 +37,20 @@ func fetchRecentTweets(fromHandle handle: String, numberOfTweets count: Int = 30
     URLSession.shared.dataTask(with: request) { (data, res, err) in
         guard let data = data else { semaphore.signal(); return } // unwrap the data
         
+        // TODO: error handling for request
+        
         do {
             let jsonResponse = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)
             guard let tweetArray = jsonResponse as? [Any] else { semaphore.signal(); return }
-            print(tweetArray.count)
             
-            //TODO: Parse data
+            for tweetJson in tweetArray {
+                guard let tweetObject = tweetJson as? [String: Any] else { continue }
+                guard let tweet = parseTweet(tweetObject) else { continue }
+                tweets.append(tweet)
+            }
             
-            semaphore.signal() // signal completion
+            // signal completion
+            semaphore.signal()
             
         } catch {
             semaphore.signal()

@@ -9,11 +9,14 @@
 import SwiftUI
 
 /**
- Displayed upon app login 
+ Displayed upon app login
+ 
+ @Binding : handle - string being updated by textfield
+ @Binding: viewDisplayed - variable that maintains the current view to display in the ContentView
  */
 struct LoginPage: View {
     @Binding var handle: String
-    @Binding var showLogin: Bool
+    @Binding var viewDisplayed: Display
     
     
     var body: some View {
@@ -21,7 +24,7 @@ struct LoginPage: View {
             Color("PastelPink")
                 .edgesIgnoringSafeArea(.all)
             
-            LoginCard(handle: self.$handle, searched: self.$showLogin)
+            LoginCard(handle: self.$handle, viewDisplayed: self.$viewDisplayed)
                 .padding(.horizontal, 36)
                 .shadow(color: Color.gray.opacity(0.5), radius: 8)
             
@@ -40,8 +43,9 @@ extension LoginPage {
      When the button is clicked, the handle variable is updated with the textfield handle and searched becomes toggled
      */
     struct LoginCard: View {
+        @State var searched = false
         @Binding var handle: String
-        @Binding var searched: Bool
+        @Binding var viewDisplayed: Display
         
         
         var body: some View {
@@ -59,9 +63,13 @@ extension LoginPage {
                 
                 Button(action: {
                     withAnimation(Animation.interpolatingSpring(mass: 4, stiffness: 10, damping: 40, initialVelocity: 8)) {
-                        self.searched.toggle()
+                        // TODO: Look at calling a closure
+                        let tweets = fetchRecentTweets(fromHandle: "garyvee")
+                        fetchPersonalityInsightsFromTweets(tweets)
                         
-                        let _ = fetchRecentTweets(fromHandle: "garyvee")
+                        // update the states
+                        self.viewDisplayed = .insightPage
+                        self.searched.toggle()
                         print("searching twtitter")
                     }
                 }) {
@@ -93,6 +101,6 @@ extension LoginPage {
 
 struct LoginCard_Previews: PreviewProvider {
     static var previews: some View {
-        LoginPage(handle: .constant(""), showLogin: .constant(false))
+        LoginPage(handle: .constant(""), viewDisplayed: .constant(.mainPage))
     }
 }

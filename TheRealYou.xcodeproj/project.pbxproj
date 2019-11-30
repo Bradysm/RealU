@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,9 @@
 		235F60952391CF3700B9A6EA /* TwitterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F60942391CF3700B9A6EA /* TwitterApi.swift */; };
 		235F60982391CFC300B9A6EA /* ApiTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F60972391CFC300B9A6EA /* ApiTokens.swift */; };
 		235F609A2391E4B000B9A6EA /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F60992391E4B000B9A6EA /* LoginPage.swift */; };
+		235F609E23921FD000B9A6EA /* WatsonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F609D23921FD000B9A6EA /* WatsonApi.swift */; };
+		2382EA0523923D8600610664 /* DisplayEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2382EA0423923D8600610664 /* DisplayEnum.swift */; };
+		55434BECDC961C32A7BFF1DF /* Pods_TheRealYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785E296E2DAD130A94B30008 /* Pods_TheRealYou.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,11 @@
 		235F60942391CF3700B9A6EA /* TwitterApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterApi.swift; sourceTree = "<group>"; };
 		235F60972391CFC300B9A6EA /* ApiTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTokens.swift; sourceTree = "<group>"; };
 		235F60992391E4B000B9A6EA /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		235F609D23921FD000B9A6EA /* WatsonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonApi.swift; sourceTree = "<group>"; };
+		2382EA0423923D8600610664 /* DisplayEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEnum.swift; sourceTree = "<group>"; };
+		2FE0F21042C539C279B6E3E8 /* Pods-TheRealYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRealYou.debug.xcconfig"; path = "Target Support Files/Pods-TheRealYou/Pods-TheRealYou.debug.xcconfig"; sourceTree = "<group>"; };
+		54DAB9242BDE041EB86C5080 /* Pods-TheRealYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRealYou.release.xcconfig"; path = "Target Support Files/Pods-TheRealYou/Pods-TheRealYou.release.xcconfig"; sourceTree = "<group>"; };
+		785E296E2DAD130A94B30008 /* Pods_TheRealYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheRealYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55434BECDC961C32A7BFF1DF /* Pods_TheRealYou.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +67,8 @@
 			children = (
 				231C69D5238F6D2400545BCB /* TheRealYou */,
 				231C69D4238F6D2400545BCB /* Products */,
+				F92D66025A18CD8B30A3F7FA /* Pods */,
+				7343F9EFC82EF3C9D637F3EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				235F60972391CFC300B9A6EA /* ApiTokens.swift */,
+				2382EA0423923D8600610664 /* DisplayEnum.swift */,
+				235F609C23921EFC00B9A6EA /* Watson */,
 				235F60962391CF6C00B9A6EA /* Twitter */,
 			);
 			name = Model;
@@ -139,6 +152,31 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		235F609C23921EFC00B9A6EA /* Watson */ = {
+			isa = PBXGroup;
+			children = (
+				235F609D23921FD000B9A6EA /* WatsonApi.swift */,
+			);
+			name = Watson;
+			sourceTree = "<group>";
+		};
+		7343F9EFC82EF3C9D637F3EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				785E296E2DAD130A94B30008 /* Pods_TheRealYou.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F92D66025A18CD8B30A3F7FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FE0F21042C539C279B6E3E8 /* Pods-TheRealYou.debug.xcconfig */,
+				54DAB9242BDE041EB86C5080 /* Pods-TheRealYou.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 231C69E7238F6D2500545BCB /* Build configuration list for PBXNativeTarget "TheRealYou" */;
 			buildPhases = (
+				69CD491002E0845437B6C8DA /* [CP] Check Pods Manifest.lock */,
 				231C69CF238F6D2400545BCB /* Sources */,
 				231C69D0238F6D2400545BCB /* Frameworks */,
 				231C69D1238F6D2400545BCB /* Resources */,
+				00C5D43A7890B41DB82D1DD7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +246,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00C5D43A7890B41DB82D1DD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheRealYou/Pods-TheRealYou-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheRealYou/Pods-TheRealYou-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheRealYou/Pods-TheRealYou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69CD491002E0845437B6C8DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheRealYou-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		231C69CF238F6D2400545BCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -215,6 +297,8 @@
 				231C69D7238F6D2400545BCB /* AppDelegate.swift in Sources */,
 				231C69D9238F6D2400545BCB /* SceneDelegate.swift in Sources */,
 				235F609A2391E4B000B9A6EA /* LoginPage.swift in Sources */,
+				2382EA0523923D8600610664 /* DisplayEnum.swift in Sources */,
+				235F609E23921FD000B9A6EA /* WatsonApi.swift in Sources */,
 				231C69EF238F8BEC00545BCB /* IntelligenceCard.swift in Sources */,
 				231C69DB238F6D2400545BCB /* ContentView.swift in Sources */,
 				235F60902390A4DC00B9A6EA /* Modal.swift in Sources */,
@@ -354,6 +438,7 @@
 		};
 		231C69E8238F6D2500545BCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE0F21042C539C279B6E3E8 /* Pods-TheRealYou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +459,7 @@
 		};
 		231C69E9238F6D2500545BCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54DAB9242BDE041EB86C5080 /* Pods-TheRealYou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

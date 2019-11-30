@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct IntelligenceScroll: View {
-    @Binding var continueViewing: Bool
+    @Binding var viewDisplayed: Display
     @State var showModal: Bool = false
     
     var body: some View {
@@ -22,21 +22,21 @@ struct IntelligenceScroll: View {
                 HorizontalCardScroll(cardColor1: Color("PastelGreen"), cardColor2: Color("ButtonColor"), showModal: self.$showModal)
                 
                 CardScrollTitle(title: "Needs")
-                    .padding(.top, 40)
+                    .padding(.top, 30)
                 HorizontalCardScroll(cardColor1: Color("PastelPink"), cardColor2: Color("PastelYellow"), showModal: self.$showModal)
                 
                 
                 CardScrollTitle(title: "Values")
-                    .padding(.top, 40)
+                    .padding(.top, 30)
                 HorizontalCardScroll(cardColor1: Color("ButtonColor"), cardColor2: Color.purple, showModal: self.$showModal)
                 
                 
                 CardScrollTitle(title: "Consumer Preferences")
-                    .padding(.top, 40)
+                    .padding(.top, 30)
                 HorizontalCardScroll(cardColor1: Color("PastelYellow"), cardColor2: Color("PastelGreen"), showModal: self.$showModal)
                 
                 
-                BackToHomeButton(continueViewing: self.$continueViewing)
+                BackToHomeButton(viewDisplayed: self.$viewDisplayed)
             } // end of scroll view
             .blur(radius: self.showModal ? 6 : 0.0)
             
@@ -56,12 +56,12 @@ extension IntelligenceScroll {
      Button which updates the state of the UI to send the user back to the login page
      */
     struct BackToHomeButton: View {
-        @Binding var continueViewing: Bool
+        @Binding var viewDisplayed: Display
         
         var body: some View {
-            // button to search a new handle
+            // button to send the user back to the main page
             Button(action: {
-                self.continueViewing = false
+                self.viewDisplayed = .mainPage
                 print("clicked")
             }) {
                 Text("Search New Handle")
@@ -92,12 +92,12 @@ extension IntelligenceScroll {
                         GeometryReader { geometry in
                             IntelligenceCard(color1: self.cardColor1, color2: self.cardColor2)
                                 .rotation3DEffect(Angle(degrees:
-                                    (Double(geometry.frame(in: .global).minX) - 20) / -15)
+                                    (Double(geometry.frame(in: .global).minX) - 20) / -40)
                                     , axis: (x: 0, y: 10.0, z: 0.0)
                             )
-                                .onTapGesture {
-                                    self.showModal = true
-                            }
+//                                .onTapGesture {
+//                                    self.showModal = true
+//                            }
                         }.frame(width: 250, height:  450)
                         
                     }
@@ -124,7 +124,7 @@ extension IntelligenceScroll {
         var body: some View {
             HStack {
                 Text("\(title)")
-                    .font(.title)
+                    .font(.largeTitle)
                     .foregroundColor(.primary)
                     .fontWeight(.heavy)
                 
@@ -143,6 +143,6 @@ extension IntelligenceScroll {
 
 struct IntelligenceScroll_Previews: PreviewProvider {
     static var previews: some View {
-        IntelligenceScroll(continueViewing: ContentView().$searched)
+        IntelligenceScroll(viewDisplayed: .constant(.insightPage))
     }
 }

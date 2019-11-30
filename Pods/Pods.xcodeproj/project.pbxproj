@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18DDEC8005B616FFC0A7738DCEC48706 /* IBMSwiftSDKCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5682D0CF7E043A08CC216ADA00A80196 /* IBMSwiftSDKCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EB65C5FE00C53D5AB95300ABE12DEB7 /* Trait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F945177A9339845FC5633FFAB0B0B /* Trait.swift */; };
+		227933111FE6977571794E43CCF67831 /* Pods-TheRealYou-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E59CD382852C258C5E938F7630F2935 /* Pods-TheRealYou-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244F7D4D14CDC32A8793418BC7A1ABDF /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CD8058DB340274FE12539B0577B4E /* InsecureConnection.swift */; };
+		27A68495F6F637A35147325FB8BF7C80 /* Pods-TheRealYou-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE560153DE89F9CD21D6477C20A8731 /* Pods-TheRealYou-dummy.m */; };
+		2AAD37619C70C3BAC535E8E96EFA0EE3 /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F83DAFC5220DB7F4F3EE361095C5B8 /* RestRequest.swift */; };
+		386A9031324F077502497EC27BD2C859 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA257D562DB783BEFDD2B7714FD58325 /* Profile.swift */; };
+		398CB02809514D79130985BEEEE9A16E /* PersonalityInsights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40622CE2F88EF21B5FCE859504E769C7 /* PersonalityInsights.swift */; };
+		437225C6A826B1D575C438AC6DC46898 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5991D4C90A4E586AF235A98A371C7 /* Behavior.swift */; };
+		4927D01B9594C886E85D50D93AC8A405 /* ProfileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82006D2DE7791978DBF18EF14018A8AD /* ProfileContent.swift */; };
+		59354C94A50B483675B4C9957DA0E761 /* CloudPakForDataAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BE5F0B19EEABA9E1331F88349BC9B /* CloudPakForDataAuthenticator.swift */; };
+		5CBC05D5484E4FAEBEC3057C5A8C71DE /* ConsumptionPreferencesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39542B9D9905D176C4DD467FF67BD1 /* ConsumptionPreferencesCategory.swift */; };
+		5E23AF5BA33DF108D10C3F0C29912CA1 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3458DC5339AD1135ADE168ED3A90CAE6 /* MultipartFormData.swift */; };
+		6463CF8A091A1004DA4C7D6D4C465050 /* IBMSwiftSDKCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F168F09AB8460DC2E4D356212F8381F1 /* IBMSwiftSDKCore-dummy.m */; };
+		68E31296823BBDB37562E1131FC51749 /* IBMWatsonPersonalityInsightsV3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E290BB567ABC7C7DEA4BBE9CA85621FB /* IBMWatsonPersonalityInsightsV3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FA1A1CCAC31B709EF1420192C3A2BE0 /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F519F7C1F348BE04C55F06DCC263730 /* InsecureConnection.swift */; };
+		785C4BE567B07F4844634B5D0BFA82CA /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED9C732AC0E50175AACA366DD7DA72 /* JWT.swift */; };
+		7BBF1CB569A83CC6D5235BC19E6727C9 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFD431D100684A42FB8EA11D138866 /* Content.swift */; };
+		80DF81F082D9C2AE5DA1E8F9FEE8DA80 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9BEA966A5E85CA40A8B23F1B061504 /* RestResponse.swift */; };
+		8392E933DBD454378BDE6C18114E5D8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */; };
+		86D168DEEA9F1B0483E5D24C40382A93 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60481702EDAB6CEFD5C2764CE8C3C /* Authentication.swift */; };
+		891829B1B3A1FE3E3AEEB4517EFE6CA4 /* ConfigBasedAuthenticatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63FC01FB72366B4FF6F65136580581 /* ConfigBasedAuthenticatorFactory.swift */; };
+		89979802EC40FBEA13FAB7995F413796 /* ContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4C00E24ABBE0F08C33F8A3E0429D1 /* ContentItem.swift */; };
+		8C3CDC6E893FFA12B6CDA5DACED9F5F1 /* Warning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D1F34CC32796E3D827DED607C57B66 /* Warning.swift */; };
+		9A5A4C89A39379E1A3EB09F39B2453E3 /* RestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDB9E2F7ECD1FDFB841EFCCFEB3A40 /* RestError.swift */; };
+		AA9560C73201DC9B6F2D888C54935890 /* IAMAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C62BB32B29ECAF6F039DB8327E9178 /* IAMAuthenticator.swift */; };
+		B1E31A611E08BCD675628F20B6C016DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */; };
+		B787B5FCD2787858439AF870C5E0B711 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42FFFA3809AEF0583C7B08F65829D9E /* CodableExtensions.swift */; };
+		C0688AB6B10482E8E9FC54DBABE0C4DA /* IBMWatsonPersonalityInsightsV3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A9B2E6B6B4827CF5D9F3338BFDA17 /* IBMWatsonPersonalityInsightsV3-dummy.m */; };
+		D16DB90B36FCC44F5F55EF83C970A245 /* IBMSwiftSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46ACAE2D7BB5CFD1E5306E8237994D96 /* IBMSwiftSDKCore.framework */; };
+		D75AE0BE3046E4AE278FF5A098B5769A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917CED21144726C598E0AF26498FE56 /* JSON.swift */; };
+		DB0D0B553C6152649068EA9B2B32A1BA /* ConsumptionPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9583CC1E7C0C82F7E5076BFB1BE9D270 /* ConsumptionPreferences.swift */; };
+		EA4B44AE2EB87B7E949CE6032A79AA43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */; };
+		F9D5A1300D8AD1D735C963F5AC64C5E0 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279F398F8D392E08677B81B7654D236 /* Shared.swift */; };
+		FDFFB46B16962698755E53062E1F40FA /* CredentialUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B5EC5980C041D89EC8AA54340C7E07 /* CredentialUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E06E7ED60EB1628C92A3928896C5B84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C212BBFAF6FC8270BF5BEF8057998E30;
+			remoteInfo = IBMSwiftSDKCore;
+		};
+		973CB9526C7CF9F757803DC53899AD29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30A13375368B2E81BBA590446F5AC1F3;
+			remoteInfo = IBMWatsonPersonalityInsightsV3;
+		};
+		B23E220961811CF49C9F758AC6C47266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C212BBFAF6FC8270BF5BEF8057998E30;
+			remoteInfo = IBMSwiftSDKCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14ED9C732AC0E50175AACA366DD7DA72 /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = Sources/IBMSwiftSDKCore/Authentication/JWT.swift; sourceTree = "<group>"; };
+		16F5991D4C90A4E586AF235A98A371C7 /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Source/PersonalityInsightsV3/Models/Behavior.swift; sourceTree = "<group>"; };
+		23EDAD63F73D28AC50CC5BAC896C3063 /* IBMSwiftSDKCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMSwiftSDKCore.modulemap; sourceTree = "<group>"; };
+		2AE560153DE89F9CD21D6477C20A8731 /* Pods-TheRealYou-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheRealYou-dummy.m"; sourceTree = "<group>"; };
+		2C04E9C80A6266F05DEB794BF32CFB0B /* Pods-TheRealYou-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheRealYou-frameworks.sh"; sourceTree = "<group>"; };
+		2E7F945177A9339845FC5633FFAB0B0B /* Trait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Trait.swift; path = Source/PersonalityInsightsV3/Models/Trait.swift; sourceTree = "<group>"; };
+		3458DC5339AD1135ADE168ED3A90CAE6 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Sources/IBMSwiftSDKCore/MultipartFormData.swift; sourceTree = "<group>"; };
+		40622CE2F88EF21B5FCE859504E769C7 /* PersonalityInsights.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersonalityInsights.swift; path = Source/PersonalityInsightsV3/PersonalityInsights.swift; sourceTree = "<group>"; };
+		41D1F34CC32796E3D827DED607C57B66 /* Warning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Warning.swift; path = Source/PersonalityInsightsV3/Models/Warning.swift; sourceTree = "<group>"; };
+		464BA437F9A147D2EB86D958F55F2FDA /* Pods-TheRealYou-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheRealYou-Info.plist"; sourceTree = "<group>"; };
+		46ACAE2D7BB5CFD1E5306E8237994D96 /* IBMSwiftSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMSwiftSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A63FC01FB72366B4FF6F65136580581 /* ConfigBasedAuthenticatorFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfigBasedAuthenticatorFactory.swift; path = Sources/IBMSwiftSDKCore/Authentication/ConfigBasedAuthenticatorFactory.swift; sourceTree = "<group>"; };
+		5682D0CF7E043A08CC216ADA00A80196 /* IBMSwiftSDKCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMSwiftSDKCore-umbrella.h"; sourceTree = "<group>"; };
+		59C62BB32B29ECAF6F039DB8327E9178 /* IAMAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IAMAuthenticator.swift; path = Sources/IBMSwiftSDKCore/Authentication/IAMAuthenticator.swift; sourceTree = "<group>"; };
+		5AF4C00E24ABBE0F08C33F8A3E0429D1 /* ContentItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentItem.swift; path = Source/PersonalityInsightsV3/Models/ContentItem.swift; sourceTree = "<group>"; };
+		5C5E931DA4E2087CF8D41A2EFDF0D5FC /* Pods-TheRealYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheRealYou.release.xcconfig"; sourceTree = "<group>"; };
+		6E59CD382852C258C5E938F7630F2935 /* Pods-TheRealYou-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheRealYou-umbrella.h"; sourceTree = "<group>"; };
+		6F2B8D5E9C6DB7B6608D6CCDEEA5D876 /* IBMSwiftSDKCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMSwiftSDKCore-Info.plist"; sourceTree = "<group>"; };
+		77CFD431D100684A42FB8EA11D138866 /* Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Content.swift; path = Source/PersonalityInsightsV3/Models/Content.swift; sourceTree = "<group>"; };
+		7C2A9B2E6B6B4827CF5D9F3338BFDA17 /* IBMWatsonPersonalityInsightsV3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonPersonalityInsightsV3-dummy.m"; sourceTree = "<group>"; };
+		7C7F506D363ACE802B51B3B43349F6AC /* Pods-TheRealYou-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheRealYou-acknowledgements.plist"; sourceTree = "<group>"; };
+		7E8FECD150BF1E1B2B9441FB64FF5CC7 /* IBMWatsonPersonalityInsightsV3-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonPersonalityInsightsV3-Info.plist"; sourceTree = "<group>"; };
+		7F519F7C1F348BE04C55F06DCC263730 /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Sources/IBMSwiftSDKCore/Authentication/InsecureConnection.swift; sourceTree = "<group>"; };
+		7F64C43D60F70E69FA88684D4164106A /* IBMSwiftSDKCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMSwiftSDKCore-prefix.pch"; sourceTree = "<group>"; };
+		82006D2DE7791978DBF18EF14018A8AD /* ProfileContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileContent.swift; path = Source/PersonalityInsightsV3/Models/ProfileContent.swift; sourceTree = "<group>"; };
+		8EE8C06ACD0D9CA2C9DE95B090B4C1E7 /* PersonalityInsights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PersonalityInsights.framework; path = IBMWatsonPersonalityInsightsV3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94BD4E7DEC91770F6FB498710CD235A6 /* Pods_TheRealYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TheRealYou.framework; path = "Pods-TheRealYou.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9583CC1E7C0C82F7E5076BFB1BE9D270 /* ConsumptionPreferences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsumptionPreferences.swift; path = Source/PersonalityInsightsV3/Models/ConsumptionPreferences.swift; sourceTree = "<group>"; };
+		977B4565E89845296482BB5B9E7D5DF9 /* IBMSwiftSDKCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMSwiftSDKCore.xcconfig; sourceTree = "<group>"; };
+		9CC3B8DAF043E014811021E4C1EB68F6 /* IBMWatsonPersonalityInsightsV3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonPersonalityInsightsV3.xcconfig; sourceTree = "<group>"; };
+		9D44873ADA2452229A986FCD9606C5B4 /* Pods-TheRealYou.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TheRealYou.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B01EA73140B3F5C6184F5F8AC1627EC0 /* IBMWatsonPersonalityInsightsV3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonPersonalityInsightsV3-prefix.pch"; sourceTree = "<group>"; };
+		B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B22BE5F0B19EEABA9E1331F88349BC9B /* CloudPakForDataAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudPakForDataAuthenticator.swift; path = Sources/IBMSwiftSDKCore/Authentication/CloudPakForDataAuthenticator.swift; sourceTree = "<group>"; };
+		C7EDB9E2F7ECD1FDFB841EFCCFEB3A40 /* RestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestError.swift; path = Sources/IBMSwiftSDKCore/RestError.swift; sourceTree = "<group>"; };
+		C83CD8058DB340274FE12539B0577B4E /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Source/SupportingFiles/InsecureConnection.swift; sourceTree = "<group>"; };
+		CC39542B9D9905D176C4DD467FF67BD1 /* ConsumptionPreferencesCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsumptionPreferencesCategory.swift; path = Source/PersonalityInsightsV3/Models/ConsumptionPreferencesCategory.swift; sourceTree = "<group>"; };
+		CDE881C76E9452E28AB142CF26FE4447 /* Pods-TheRealYou-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheRealYou-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IBMSwiftSDKCore.framework; path = IBMSwiftSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D999B3350988C047663D571C339DA98C /* Pods-TheRealYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheRealYou.debug.xcconfig"; sourceTree = "<group>"; };
+		DA257D562DB783BEFDD2B7714FD58325 /* Profile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Source/PersonalityInsightsV3/Models/Profile.swift; sourceTree = "<group>"; };
+		DCC60481702EDAB6CEFD5C2764CE8C3C /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Sources/IBMSwiftSDKCore/Authentication/Authentication.swift; sourceTree = "<group>"; };
+		E279F398F8D392E08677B81B7654D236 /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Source/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
+		E290BB567ABC7C7DEA4BBE9CA85621FB /* IBMWatsonPersonalityInsightsV3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonPersonalityInsightsV3-umbrella.h"; sourceTree = "<group>"; };
+		E3F83DAFC5220DB7F4F3EE361095C5B8 /* RestRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestRequest.swift; path = Sources/IBMSwiftSDKCore/RestRequest.swift; sourceTree = "<group>"; };
+		E917CED21144726C598E0AF26498FE56 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/IBMSwiftSDKCore/JSON.swift; sourceTree = "<group>"; };
+		EF9BEA966A5E85CA40A8B23F1B061504 /* RestResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestResponse.swift; path = Sources/IBMSwiftSDKCore/RestResponse.swift; sourceTree = "<group>"; };
+		F168F09AB8460DC2E4D356212F8381F1 /* IBMSwiftSDKCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMSwiftSDKCore-dummy.m"; sourceTree = "<group>"; };
+		F42FFFA3809AEF0583C7B08F65829D9E /* CodableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableExtensions.swift; path = Sources/IBMSwiftSDKCore/CodableExtensions.swift; sourceTree = "<group>"; };
+		F8B5EC5980C041D89EC8AA54340C7E07 /* CredentialUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialUtils.swift; path = Sources/IBMSwiftSDKCore/CredentialUtils.swift; sourceTree = "<group>"; };
+		FC48C3F4E7BA654D58C287E2F859D994 /* IBMWatsonPersonalityInsightsV3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonPersonalityInsightsV3.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		464DBB0E8F9E15683B7A0654CB584301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8392E933DBD454378BDE6C18114E5D8B /* Foundation.framework in Frameworks */,
+				D16DB90B36FCC44F5F55EF83C970A245 /* IBMSwiftSDKCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87843F0234A88AA0CC80A98FB8673D7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E31A611E08BCD675628F20B6C016DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02BC3EDD97C4B5C693165C5F2F86DB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4B44AE2EB87B7E949CE6032A79AA43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04494B7614155C8CFE1EDD7CF6DD2F6B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5B953D5907DA420B2AEE68FED28CF86 /* Pods-TheRealYou */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		192B532BB14DA21923D5B849993C7986 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B06AF2F48C426BDBBEFDE8E6BF9848B2 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4BDE46936B8ED7AF09FF89CBB7EF2E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46ACAE2D7BB5CFD1E5306E8237994D96 /* IBMSwiftSDKCore.framework */,
+				192B532BB14DA21923D5B849993C7986 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7216252D4579AC13346B4296AB8274C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C7C3E89CDD3C9B913ECA21B23286A33 /* IBMSwiftSDKCore */,
+				DA23113B3805787DDBB8013C9ACB0185 /* IBMWatsonPersonalityInsightsV3 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C7C3E89CDD3C9B913ECA21B23286A33 /* IBMSwiftSDKCore */ = {
+			isa = PBXGroup;
+			children = (
+				DCC60481702EDAB6CEFD5C2764CE8C3C /* Authentication.swift */,
+				B22BE5F0B19EEABA9E1331F88349BC9B /* CloudPakForDataAuthenticator.swift */,
+				F42FFFA3809AEF0583C7B08F65829D9E /* CodableExtensions.swift */,
+				4A63FC01FB72366B4FF6F65136580581 /* ConfigBasedAuthenticatorFactory.swift */,
+				F8B5EC5980C041D89EC8AA54340C7E07 /* CredentialUtils.swift */,
+				59C62BB32B29ECAF6F039DB8327E9178 /* IAMAuthenticator.swift */,
+				7F519F7C1F348BE04C55F06DCC263730 /* InsecureConnection.swift */,
+				E917CED21144726C598E0AF26498FE56 /* JSON.swift */,
+				14ED9C732AC0E50175AACA366DD7DA72 /* JWT.swift */,
+				3458DC5339AD1135ADE168ED3A90CAE6 /* MultipartFormData.swift */,
+				C7EDB9E2F7ECD1FDFB841EFCCFEB3A40 /* RestError.swift */,
+				E3F83DAFC5220DB7F4F3EE361095C5B8 /* RestRequest.swift */,
+				EF9BEA966A5E85CA40A8B23F1B061504 /* RestResponse.swift */,
+				C486E94A90967E9A6F33D9AFD154B129 /* Support Files */,
+			);
+			name = IBMSwiftSDKCore;
+			path = IBMSwiftSDKCore;
+			sourceTree = "<group>";
+		};
+		830391C2C290AE0FE6D786CC284B06AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */,
+				8EE8C06ACD0D9CA2C9DE95B090B4C1E7 /* PersonalityInsights.framework */,
+				94BD4E7DEC91770F6FB498710CD235A6 /* Pods_TheRealYou.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C486E94A90967E9A6F33D9AFD154B129 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				23EDAD63F73D28AC50CC5BAC896C3063 /* IBMSwiftSDKCore.modulemap */,
+				977B4565E89845296482BB5B9E7D5DF9 /* IBMSwiftSDKCore.xcconfig */,
+				F168F09AB8460DC2E4D356212F8381F1 /* IBMSwiftSDKCore-dummy.m */,
+				6F2B8D5E9C6DB7B6608D6CCDEEA5D876 /* IBMSwiftSDKCore-Info.plist */,
+				7F64C43D60F70E69FA88684D4164106A /* IBMSwiftSDKCore-prefix.pch */,
+				5682D0CF7E043A08CC216ADA00A80196 /* IBMSwiftSDKCore-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMSwiftSDKCore";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				4BDE46936B8ED7AF09FF89CBB7EF2E0A /* Frameworks */,
+				7216252D4579AC13346B4296AB8274C0 /* Pods */,
+				830391C2C290AE0FE6D786CC284B06AE /* Products */,
+				04494B7614155C8CFE1EDD7CF6DD2F6B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D915D3C5AF94733EB490E293761077E4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC48C3F4E7BA654D58C287E2F859D994 /* IBMWatsonPersonalityInsightsV3.modulemap */,
+				9CC3B8DAF043E014811021E4C1EB68F6 /* IBMWatsonPersonalityInsightsV3.xcconfig */,
+				7C2A9B2E6B6B4827CF5D9F3338BFDA17 /* IBMWatsonPersonalityInsightsV3-dummy.m */,
+				7E8FECD150BF1E1B2B9441FB64FF5CC7 /* IBMWatsonPersonalityInsightsV3-Info.plist */,
+				B01EA73140B3F5C6184F5F8AC1627EC0 /* IBMWatsonPersonalityInsightsV3-prefix.pch */,
+				E290BB567ABC7C7DEA4BBE9CA85621FB /* IBMWatsonPersonalityInsightsV3-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonPersonalityInsightsV3";
+			sourceTree = "<group>";
+		};
+		DA23113B3805787DDBB8013C9ACB0185 /* IBMWatsonPersonalityInsightsV3 */ = {
+			isa = PBXGroup;
+			children = (
+				16F5991D4C90A4E586AF235A98A371C7 /* Behavior.swift */,
+				9583CC1E7C0C82F7E5076BFB1BE9D270 /* ConsumptionPreferences.swift */,
+				CC39542B9D9905D176C4DD467FF67BD1 /* ConsumptionPreferencesCategory.swift */,
+				77CFD431D100684A42FB8EA11D138866 /* Content.swift */,
+				5AF4C00E24ABBE0F08C33F8A3E0429D1 /* ContentItem.swift */,
+				C83CD8058DB340274FE12539B0577B4E /* InsecureConnection.swift */,
+				40622CE2F88EF21B5FCE859504E769C7 /* PersonalityInsights.swift */,
+				DA257D562DB783BEFDD2B7714FD58325 /* Profile.swift */,
+				82006D2DE7791978DBF18EF14018A8AD /* ProfileContent.swift */,
+				E279F398F8D392E08677B81B7654D236 /* Shared.swift */,
+				2E7F945177A9339845FC5633FFAB0B0B /* Trait.swift */,
+				41D1F34CC32796E3D827DED607C57B66 /* Warning.swift */,
+				D915D3C5AF94733EB490E293761077E4 /* Support Files */,
+			);
+			name = IBMWatsonPersonalityInsightsV3;
+			path = IBMWatsonPersonalityInsightsV3;
+			sourceTree = "<group>";
+		};
+		F5B953D5907DA420B2AEE68FED28CF86 /* Pods-TheRealYou */ = {
+			isa = PBXGroup;
+			children = (
+				9D44873ADA2452229A986FCD9606C5B4 /* Pods-TheRealYou.modulemap */,
+				CDE881C76E9452E28AB142CF26FE4447 /* Pods-TheRealYou-acknowledgements.markdown */,
+				7C7F506D363ACE802B51B3B43349F6AC /* Pods-TheRealYou-acknowledgements.plist */,
+				2AE560153DE89F9CD21D6477C20A8731 /* Pods-TheRealYou-dummy.m */,
+				2C04E9C80A6266F05DEB794BF32CFB0B /* Pods-TheRealYou-frameworks.sh */,
+				464BA437F9A147D2EB86D958F55F2FDA /* Pods-TheRealYou-Info.plist */,
+				6E59CD382852C258C5E938F7630F2935 /* Pods-TheRealYou-umbrella.h */,
+				D999B3350988C047663D571C339DA98C /* Pods-TheRealYou.debug.xcconfig */,
+				5C5E931DA4E2087CF8D41A2EFDF0D5FC /* Pods-TheRealYou.release.xcconfig */,
+			);
+			name = "Pods-TheRealYou";
+			path = "Target Support Files/Pods-TheRealYou";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		514249511011FFD8736FB7E29D22619C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				227933111FE6977571794E43CCF67831 /* Pods-TheRealYou-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F7FFA05F59CC8CF51AF629877A188A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DDEC8005B616FFC0A7738DCEC48706 /* IBMSwiftSDKCore-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EBEF1855E55993D35F56AA94F725116 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E31296823BBDB37562E1131FC51749 /* IBMWatsonPersonalityInsightsV3-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12C099D0E27BC9714786C653F335162A /* Pods-TheRealYou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E5F5B41ACABF631CC2E73C7F959C8A /* Build configuration list for PBXNativeTarget "Pods-TheRealYou" */;
+			buildPhases = (
+				514249511011FFD8736FB7E29D22619C /* Headers */,
+				2857ED38EA5BD4EDEDDB00BA35D2C4E6 /* Sources */,
+				87843F0234A88AA0CC80A98FB8673D7F /* Frameworks */,
+				DBF886EB650CAB6C376F2758347ACF97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				068E947FE073D1D21C3F048DD2BD76CC /* PBXTargetDependency */,
+				0D369D351D8CC81E4B3A65E9D21C1100 /* PBXTargetDependency */,
+			);
+			name = "Pods-TheRealYou";
+			productName = "Pods-TheRealYou";
+			productReference = 94BD4E7DEC91770F6FB498710CD235A6 /* Pods_TheRealYou.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30A13375368B2E81BBA590446F5AC1F3 /* IBMWatsonPersonalityInsightsV3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1384E36880E8F924EB1D570FCFBA6C4 /* Build configuration list for PBXNativeTarget "IBMWatsonPersonalityInsightsV3" */;
+			buildPhases = (
+				7EBEF1855E55993D35F56AA94F725116 /* Headers */,
+				1AC35850D467E96A7FBB09E3E32773DD /* Sources */,
+				464DBB0E8F9E15683B7A0654CB584301 /* Frameworks */,
+				F6EDC2035673CCA6FD279F04BF55DF73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AF35FE44B98E3AC6438990D41F9EBA2 /* PBXTargetDependency */,
+			);
+			name = IBMWatsonPersonalityInsightsV3;
+			productName = IBMWatsonPersonalityInsightsV3;
+			productReference = 8EE8C06ACD0D9CA2C9DE95B090B4C1E7 /* PersonalityInsights.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8843CC30CDE47856297265C0321AACBF /* Build configuration list for PBXNativeTarget "IBMSwiftSDKCore" */;
+			buildPhases = (
+				5F7FFA05F59CC8CF51AF629877A188A0 /* Headers */,
+				41794AAA12C46CD1E820B389596A05EE /* Sources */,
+				B02BC3EDD97C4B5C693165C5F2F86DB2 /* Frameworks */,
+				366DBA4C8EB69D4EC0F2468E071776F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBMSwiftSDKCore;
+			productName = IBMSwiftSDKCore;
+			productReference = D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 830391C2C290AE0FE6D786CC284B06AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */,
+				30A13375368B2E81BBA590446F5AC1F3 /* IBMWatsonPersonalityInsightsV3 */,
+				12C099D0E27BC9714786C653F335162A /* Pods-TheRealYou */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		366DBA4C8EB69D4EC0F2468E071776F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBF886EB650CAB6C376F2758347ACF97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EDC2035673CCA6FD279F04BF55DF73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AC35850D467E96A7FBB09E3E32773DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437225C6A826B1D575C438AC6DC46898 /* Behavior.swift in Sources */,
+				DB0D0B553C6152649068EA9B2B32A1BA /* ConsumptionPreferences.swift in Sources */,
+				5CBC05D5484E4FAEBEC3057C5A8C71DE /* ConsumptionPreferencesCategory.swift in Sources */,
+				7BBF1CB569A83CC6D5235BC19E6727C9 /* Content.swift in Sources */,
+				89979802EC40FBEA13FAB7995F413796 /* ContentItem.swift in Sources */,
+				C0688AB6B10482E8E9FC54DBABE0C4DA /* IBMWatsonPersonalityInsightsV3-dummy.m in Sources */,
+				244F7D4D14CDC32A8793418BC7A1ABDF /* InsecureConnection.swift in Sources */,
+				398CB02809514D79130985BEEEE9A16E /* PersonalityInsights.swift in Sources */,
+				386A9031324F077502497EC27BD2C859 /* Profile.swift in Sources */,
+				4927D01B9594C886E85D50D93AC8A405 /* ProfileContent.swift in Sources */,
+				F9D5A1300D8AD1D735C963F5AC64C5E0 /* Shared.swift in Sources */,
+				1EB65C5FE00C53D5AB95300ABE12DEB7 /* Trait.swift in Sources */,
+				8C3CDC6E893FFA12B6CDA5DACED9F5F1 /* Warning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2857ED38EA5BD4EDEDDB00BA35D2C4E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27A68495F6F637A35147325FB8BF7C80 /* Pods-TheRealYou-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41794AAA12C46CD1E820B389596A05EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86D168DEEA9F1B0483E5D24C40382A93 /* Authentication.swift in Sources */,
+				59354C94A50B483675B4C9957DA0E761 /* CloudPakForDataAuthenticator.swift in Sources */,
+				B787B5FCD2787858439AF870C5E0B711 /* CodableExtensions.swift in Sources */,
+				891829B1B3A1FE3E3AEEB4517EFE6CA4 /* ConfigBasedAuthenticatorFactory.swift in Sources */,
+				FDFFB46B16962698755E53062E1F40FA /* CredentialUtils.swift in Sources */,
+				AA9560C73201DC9B6F2D888C54935890 /* IAMAuthenticator.swift in Sources */,
+				6463CF8A091A1004DA4C7D6D4C465050 /* IBMSwiftSDKCore-dummy.m in Sources */,
+				6FA1A1CCAC31B709EF1420192C3A2BE0 /* InsecureConnection.swift in Sources */,
+				D75AE0BE3046E4AE278FF5A098B5769A /* JSON.swift in Sources */,
+				785C4BE567B07F4844634B5D0BFA82CA /* JWT.swift in Sources */,
+				5E23AF5BA33DF108D10C3F0C29912CA1 /* MultipartFormData.swift in Sources */,
+				9A5A4C89A39379E1A3EB09F39B2453E3 /* RestError.swift in Sources */,
+				2AAD37619C70C3BAC535E8E96EFA0EE3 /* RestRequest.swift in Sources */,
+				80DF81F082D9C2AE5DA1E8F9FEE8DA80 /* RestResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		068E947FE073D1D21C3F048DD2BD76CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMSwiftSDKCore;
+			target = C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */;
+			targetProxy = B23E220961811CF49C9F758AC6C47266 /* PBXContainerItemProxy */;
+		};
+		0D369D351D8CC81E4B3A65E9D21C1100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonPersonalityInsightsV3;
+			target = 30A13375368B2E81BBA590446F5AC1F3 /* IBMWatsonPersonalityInsightsV3 */;
+			targetProxy = 973CB9526C7CF9F757803DC53899AD29 /* PBXContainerItemProxy */;
+		};
+		2AF35FE44B98E3AC6438990D41F9EBA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMSwiftSDKCore;
+			target = C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */;
+			targetProxy = 5E06E7ED60EB1628C92A3928896C5B84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		462BA387F6400D333623C02900D312E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977B4565E89845296482BB5B9E7D5DF9 /* IBMSwiftSDKCore.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = IBMSwiftSDKCore;
+				PRODUCT_NAME = IBMSwiftSDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		703344181F3FA9DF18EA44682A1D8C6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5E931DA4E2087CF8D41A2EFDF0D5FC /* Pods-TheRealYou.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TheRealYou/Pods-TheRealYou-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheRealYou/Pods-TheRealYou.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77D97F096F7C349E35449CAA7AE3B934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC3B8DAF043E014811021E4C1EB68F6 /* IBMWatsonPersonalityInsightsV3.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonPersonalityInsightsV3/IBMWatsonPersonalityInsightsV3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonPersonalityInsightsV3/IBMWatsonPersonalityInsightsV3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonPersonalityInsightsV3/IBMWatsonPersonalityInsightsV3.modulemap";
+				PRODUCT_MODULE_NAME = PersonalityInsights;
+				PRODUCT_NAME = PersonalityInsights;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E167DE624A4643C0DEB6ACD782B0047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D999B3350988C047663D571C339DA98C /* Pods-TheRealYou.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TheRealYou/Pods-TheRealYou-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheRealYou/Pods-TheRealYou.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80861AFF799B31EBC68CDC312842C485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977B4565E89845296482BB5B9E7D5DF9 /* IBMSwiftSDKCore.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = IBMSwiftSDKCore;
+				PRODUCT_NAME = IBMSwiftSDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A9CB89B799CA9BE28012142DB32DBDAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC3B8DAF043E014811021E4C1EB68F6 /* IBMWatsonPersonalityInsightsV3.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonPersonalityInsightsV3/IBMWatsonPersonalityInsightsV3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonPersonalityInsightsV3/IBMWatsonPersonalityInsightsV3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonPersonalityInsightsV3/IBMWatsonPersonalityInsightsV3.modulemap";
+				PRODUCT_MODULE_NAME = PersonalityInsights;
+				PRODUCT_NAME = PersonalityInsights;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24E5F5B41ACABF631CC2E73C7F959C8A /* Build configuration list for PBXNativeTarget "Pods-TheRealYou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E167DE624A4643C0DEB6ACD782B0047 /* Debug */,
+				703344181F3FA9DF18EA44682A1D8C6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8843CC30CDE47856297265C0321AACBF /* Build configuration list for PBXNativeTarget "IBMSwiftSDKCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462BA387F6400D333623C02900D312E6 /* Debug */,
+				80861AFF799B31EBC68CDC312842C485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1384E36880E8F924EB1D570FCFBA6C4 /* Build configuration list for PBXNativeTarget "IBMWatsonPersonalityInsightsV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CB89B799CA9BE28012142DB32DBDAD /* Debug */,
+				77D97F096F7C349E35449CAA7AE3B934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

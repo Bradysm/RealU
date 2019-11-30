@@ -1,0 +1,20 @@
+PODS:
+  - IBMSwiftSDKCore (1.0.0)
+  - IBMWatsonPersonalityInsightsV3 (3.0.0):
+    - IBMSwiftSDKCore (~> 1.0.0)
+
+DEPENDENCIES:
+  - IBMWatsonPersonalityInsightsV3 (~> 3.0.0)
+
+SPEC REPOS:
+  trunk:
+    - IBMSwiftSDKCore
+    - IBMWatsonPersonalityInsightsV3
+
+SPEC CHECKSUMS:
+  IBMSwiftSDKCore: 54ad77b03a4d27b218ba514580197db3b89a96ca
+  IBMWatsonPersonalityInsightsV3: d2480fb881ca300dc67277d3b4194dfba5d5137d
+
+PODFILE CHECKSUM: d3a273d497c544e92c4db27fd82fe5653995fd47
+
+COCOAPODS: 1.8.4

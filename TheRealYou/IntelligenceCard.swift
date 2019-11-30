@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct IntelligenceCard: View {
+    @State var flipped = false
     let color1: Color
     var color2: Color
     
@@ -17,8 +18,6 @@ struct IntelligenceCard: View {
             
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [color1, color2]), startPoint: .topLeading, endPoint: .bottom)
-                
-                
             }
             .frame(height: 250)
             
@@ -50,6 +49,14 @@ struct IntelligenceCard: View {
         )
         .frame(width: 275)
         .shadow(color: Color.gray.opacity(0.5), radius: 8)
+        .rotation3DEffect(self.flipped ? Angle.degrees(180) :  Angle.degrees(0), axis: (x: 0, y: 10, z: 0))
+            .onTapGesture {
+                withAnimation {
+                    self.flipped.toggle()
+                }
+                
+        }
+            
     }
 }
 
