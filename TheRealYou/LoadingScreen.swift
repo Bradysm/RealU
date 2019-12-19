@@ -15,15 +15,11 @@ struct LoadingPage: View {
     var body: some View {
         ZStack {
             Color("PastelPink")
-            .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Text(self.userData.loading == .tweets ? "Fetching Tweets" : "Generating Personality Data")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .padding(.top, 125)
-                    .padding(.horizontal)
-                    .multilineTextAlignment(.center)
+                LoadingStatusCard(status: self.$userData.loading)
+                    .padding(.top, 50)
                 
                 Spacer()
             }
@@ -34,6 +30,32 @@ struct LoadingPage: View {
 }
 
 extension LoadingPage {
+    
+    
+    /**
+     Card displayed contiaing the loading status of the RealU profile
+     */
+    struct LoadingStatusCard: View {
+        @Binding var status: LoadingStatus
+        
+        var body: some View {
+            VStack {
+                Text(self.status == .tweets ? "Fetching Tweets" : "Generating RealU Profile")
+                    .font(.title)
+                    .fontWeight(.light)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                    .multilineTextAlignment(.center)
+                
+                
+            }
+            .frame(width: UIScreen.main.bounds.width - 40)
+            .padding(.vertical, 32)
+            .background(Color.white)
+            .cornerRadius(20)
+            .shadow(color: Color.gray.opacity(0.5), radius: 8)
+        }
+    }
     
     /**
      Wrapper view to interface UIKit with SwiftUI view
@@ -49,9 +71,9 @@ extension LoadingPage {
         func updateUIViewController(_ uiViewController: ActivityIndicatorViewController, context: UIViewControllerRepresentableContext<LoadingPage.Loader>) {
             // nothing here
         }
-            
+        
     }
-
+    
 }
 
 

@@ -17,25 +17,14 @@ struct Modal: View {
             // set the white background
             Color.white
             
-            VStack {
-                Text("RealU Insight")
-                    .font(.title)
-                    .foregroundColor(Color("ButtonColor"))
-                    .fontWeight(.black)
-                    .padding(.top, 20)
-                
-                // scrollview with content
-                ScrollView {
-                    // creates the scroll view, width - 60
-                    self.generateContent()
-                }
-                .frame(height: 175)
-                
+            VStack(alignment: .center) {
+                self.generateContent()
                 Spacer()
                 
                 // button to remove modal
                 ModalButton(showModal: self.$modalData.showModal)
             }
+            .frame(width: UIScreen.main.bounds.width - 156)
         }
         .frame(width: UIScreen.main.bounds.width - 80, height: 350)
         .cornerRadius(36)
@@ -43,7 +32,7 @@ struct Modal: View {
             RoundedRectangle(cornerRadius: 36)
                 .stroke(Color.gray.opacity(0.4), lineWidth: 1)
         )
-        .padding(.horizontal)
+        .padding(.horizontal, 16)
         
     }
 }
@@ -66,12 +55,9 @@ extension Modal {
                 Text("Close Insight")
                     .foregroundColor(.white)
                     .font(.headline)
-                    .padding()
-                    .background(LinearGradient(gradient: Gradient(colors: [Color("ButtonColor"), Color("PastelGreen")]), startPoint: .leading, endPoint: .trailing))
-                    .cornerRadius(26)
-                    .padding(.vertical, 20)
-                    .shadow(color: Color.gray.opacity(0.5), radius: 8)
-                
+                    .padding(.vertical, 16)
+                    .frame(width: UIScreen.main.bounds.width - 156)
+                    .realUButtonStyle()
             }
         }
     }
@@ -81,31 +67,41 @@ extension Modal {
      Generates the modals content and reutrns a view containing the content for the modal
      */
     func generateContent() -> some View {
-        return VStack {
-            // details header
-            HStack {
-                Text("Details")
-                    .font(.headline)
-                    .foregroundColor(.black)
-                    .opacity(0.5)
-                    
-                Spacer()
-            }
+        return VStack(alignment: .leading) {
             
-            // detail
-            HStack {
-              Text("\(self.modalData.detail)")
-                .font(.body)
-                .foregroundColor(.gray)
-                .multilineTextAlignment(.leading)
-                .padding(.top, 4)
-                .layoutPriority(1)
+            Text("RealU Insight")
+                .font(.title)
+                .foregroundColor(Color("ButtonColor"))
+                .fontWeight(.semibold)
+                .padding(.top, 20)
+            
+            ScrollView {
+                // details header
+                HStack {
+                    Text("Details")
+                        .font(.headline)
+                        .foregroundColor(.black)
+                        .opacity(0.5)
+                        
+                    Spacer()
+                }
                 
-                Spacer()
+                // detail
+                HStack {
+                  Text("\(self.modalData.detail)")
+                    .font(.body)
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.leading)
+                    .padding(.top, 4)
+                    .layoutPriority(1)
+                    
+                    Spacer()
+                }
             }
+            .frame(height: 175)
             
         } // end of VStack
-        .padding(.horizontal, 20)
+        
     } // end of generate content
     
 } // end of extension

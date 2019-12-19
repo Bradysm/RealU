@@ -27,6 +27,7 @@
 		2398775023AAF6FD00725DB6 /* TraitContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398774F23AAF6FD00725DB6 /* TraitContent.swift */; };
 		2398775223AB13CB00725DB6 /* ModalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398775123AB13CB00725DB6 /* ModalImage.swift */; };
 		2398775523AB140A00725DB6 /* ConsumptionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398775423AB140A00725DB6 /* ConsumptionContent.swift */; };
+		239A537A23ABFF3A0000D51B /* LoadingStatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A537923ABFF3A0000D51B /* LoadingStatusEnum.swift */; };
 		239EA83023A74AEE0078E007 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239EA82F23A74AEE0078E007 /* UserData.swift */; };
 		239EA83223A8445A0078E007 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239EA83123A8445A0078E007 /* LoadingScreen.swift */; };
 		239EA83523A84F490078E007 /* LoaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239EA83423A84F490078E007 /* LoaderController.swift */; };
@@ -35,6 +36,7 @@
 		23C3C8762394705000465770 /* PersonalInsight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3C8752394705000465770 /* PersonalInsight.swift */; };
 		23C3C878239470A400465770 /* InsightTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3C877239470A400465770 /* InsightTitle.swift */; };
 		23C3C87A23947E5100465770 /* PersonalityProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3C87923947E5100465770 /* PersonalityProfile.swift */; };
+		23E99EB923AC37D600932385 /* RealUButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E99EB823AC37D600932385 /* RealUButtonStyle.swift */; };
 		55434BECDC961C32A7BFF1DF /* Pods_TheRealYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785E296E2DAD130A94B30008 /* Pods_TheRealYou.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,7 @@
 		2398774F23AAF6FD00725DB6 /* TraitContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitContent.swift; sourceTree = "<group>"; };
 		2398775123AB13CB00725DB6 /* ModalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalImage.swift; sourceTree = "<group>"; };
 		2398775423AB140A00725DB6 /* ConsumptionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionContent.swift; sourceTree = "<group>"; };
+		239A537923ABFF3A0000D51B /* LoadingStatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStatusEnum.swift; sourceTree = "<group>"; };
 		239EA82F23A74AEE0078E007 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		239EA83123A8445A0078E007 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		239EA83423A84F490078E007 /* LoaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderController.swift; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		23C3C8752394705000465770 /* PersonalInsight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInsight.swift; sourceTree = SOURCE_ROOT; };
 		23C3C877239470A400465770 /* InsightTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightTitle.swift; sourceTree = "<group>"; };
 		23C3C87923947E5100465770 /* PersonalityProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityProfile.swift; sourceTree = "<group>"; };
+		23E99EB823AC37D600932385 /* RealUButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealUButtonStyle.swift; sourceTree = "<group>"; };
 		2FE0F21042C539C279B6E3E8 /* Pods-TheRealYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRealYou.debug.xcconfig"; path = "Target Support Files/Pods-TheRealYou/Pods-TheRealYou.debug.xcconfig"; sourceTree = "<group>"; };
 		54DAB9242BDE041EB86C5080 /* Pods-TheRealYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRealYou.release.xcconfig"; path = "Target Support Files/Pods-TheRealYou/Pods-TheRealYou.release.xcconfig"; sourceTree = "<group>"; };
 		785E296E2DAD130A94B30008 /* Pods_TheRealYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheRealYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +116,7 @@
 				231C69DC238F6D2500545BCB /* Assets.xcassets */,
 				231C69EC238F6EB900545BCB /* Colors.xcassets */,
 				231C69EB238F6D4D00545BCB /* Delegates */,
+				23E99EBA23AC3FCB00932385 /* Protocols */,
 				231C69F0238F94BF00545BCB /* Model */,
 				235F609B2391E64300B9A6EA /* Views */,
 				231C69DE238F6D2500545BCB /* Preview Content */,
@@ -139,15 +144,14 @@
 		231C69F0238F94BF00545BCB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2382EA0423923D8600610664 /* DisplayEnum.swift */,
+				239A537C23ABFF650000D51B /* Enums */,
 				2388868D23A980B30075D46E /* API Data */,
-				2398774E23AAF6E600725DB6 /* Card Content */,
 				239EA82E23A74AD50078E007 /* Environment Data */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		235F60912391CDC200B9A6EA /* Preference Profile */ = {
+		235F60912391CDC200B9A6EA /* RealU Profile */ = {
 			isa = PBXGroup;
 			children = (
 				235F608F2390A4DC00B9A6EA /* Modal.swift */,
@@ -155,7 +159,7 @@
 				2398774823AAF25900725DB6 /* Insight */,
 				2398774723AAF24B00725DB6 /* Insight Card */,
 			);
-			name = "Preference Profile";
+			name = "RealU Profile";
 			sourceTree = "<group>";
 		};
 		235F60962391CF6C00B9A6EA /* Twitter */ = {
@@ -171,11 +175,11 @@
 			isa = PBXGroup;
 			children = (
 				231C69DA238F6D2400545BCB /* ContentView.swift */,
-				235F60992391E4B000B9A6EA /* LoginPage.swift */,
+				23E99EBB23AC3FEC00932385 /* Login */,
 				239EA83323A84F320078E007 /* Loading Screen */,
-				235F60912391CDC200B9A6EA /* Preference Profile */,
-				23AED37A23AB670E0036DF77 /* ErrorCard.swift */,
-				23AED37823AB61690036DF77 /* ErrorPage.swift */,
+				235F60912391CDC200B9A6EA /* RealU Profile */,
+				239A537823ABFC580000D51B /* Error View */,
+				23E99EB723AC37B300932385 /* View Modifiers */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -225,19 +229,29 @@
 			name = "Card Content";
 			sourceTree = "<group>";
 		};
-		2398775623AB14BB00725DB6 /* Modal */ = {
+		239A537823ABFC580000D51B /* Error View */ = {
+			isa = PBXGroup;
+			children = (
+				23AED37A23AB670E0036DF77 /* ErrorCard.swift */,
+				23AED37823AB61690036DF77 /* ErrorPage.swift */,
+			);
+			name = "Error View";
+			sourceTree = "<group>";
+		};
+		239A537C23ABFF650000D51B /* Enums */ = {
 			isa = PBXGroup;
 			children = (
 				2398775123AB13CB00725DB6 /* ModalImage.swift */,
-				2388868B23A95AF00075D46E /* ModalData.swift */,
+				239A537923ABFF3A0000D51B /* LoadingStatusEnum.swift */,
+				2382EA0423923D8600610664 /* DisplayEnum.swift */,
 			);
-			name = Modal;
+			name = Enums;
 			sourceTree = "<group>";
 		};
 		239EA82E23A74AD50078E007 /* Environment Data */ = {
 			isa = PBXGroup;
 			children = (
-				2398775623AB14BB00725DB6 /* Modal */,
+				2388868B23A95AF00075D46E /* ModalData.swift */,
 				239EA82F23A74AEE0078E007 /* UserData.swift */,
 			);
 			name = "Environment Data";
@@ -250,6 +264,30 @@
 				239EA83423A84F490078E007 /* LoaderController.swift */,
 			);
 			name = "Loading Screen";
+			sourceTree = "<group>";
+		};
+		23E99EB723AC37B300932385 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				23E99EB823AC37D600932385 /* RealUButtonStyle.swift */,
+			);
+			name = "View Modifiers";
+			sourceTree = "<group>";
+		};
+		23E99EBA23AC3FCB00932385 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2398774E23AAF6E600725DB6 /* Card Content */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		23E99EBB23AC3FEC00932385 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				235F60992391E4B000B9A6EA /* LoginPage.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		7343F9EFC82EF3C9D637F3EE /* Frameworks */ = {
@@ -386,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				235F60982391CFC300B9A6EA /* ApiTokens.swift in Sources */,
+				23E99EB923AC37D600932385 /* RealUButtonStyle.swift in Sources */,
 				231C69D7238F6D2400545BCB /* AppDelegate.swift in Sources */,
 				231C69D9238F6D2400545BCB /* SceneDelegate.swift in Sources */,
 				2398775523AB140A00725DB6 /* ConsumptionContent.swift in Sources */,
@@ -401,6 +440,7 @@
 				23C3C878239470A400465770 /* InsightTitle.swift in Sources */,
 				239EA83523A84F490078E007 /* LoaderController.swift in Sources */,
 				231C69EF238F8BEC00545BCB /* InsightCard.swift in Sources */,
+				239A537A23ABFF3A0000D51B /* LoadingStatusEnum.swift in Sources */,
 				231C69DB238F6D2400545BCB /* ContentView.swift in Sources */,
 				2398774A23AAF33700725DB6 /* CardContent.swift in Sources */,
 				239EA83223A8445A0078E007 /* LoadingScreen.swift in Sources */,

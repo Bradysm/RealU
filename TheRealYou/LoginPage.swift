@@ -52,30 +52,22 @@ extension LoginPage {
                     .multilineTextAlignment(.center)
                 
                 TextField("@elon", text: self.$userData.twitterHandle)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .foregroundColor(.gray)
+                    .padding(5)
+                    .background(
+                        RoundedRectangle(cornerRadius: 5)
+                            .foregroundColor(Color.gray.opacity(0.1))
+                            .background(
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(Color.gray.opacity(0.3), lineWidth: 1))
+                        
+                )
                     .frame(width: 200)
-                    .padding(.horizontal, 50)
-                
+                    .padding(.horizontal, 40)
                 
                 Button(action: {
                     withAnimation(Animation.interpolatingSpring(mass: 4, stiffness: 10, damping: 40, initialVelocity: 8)) {
-                        self.userData.viewDisplayed = .loadingPage
-                        self.userData.loading = .tweets
-                        // call the API's to get the data
-                        DispatchQueue.global().async {
-                            // get the tweets
-                            let tweets = fetchRecentTweets(fromHandle: self.userData.twitterHandle)
-                            DispatchQueue.main.async {
-                                guard !tweets.isEmpty else { self.userData.viewDisplayed = .errorPage; return }
-                                self.userData.loading = .personalityProfile
-                            }
-                            
-                            guard !tweets.isEmpty else { return }
-                            self.userData.profile = fetchPersonalityInsightsFromTweets(tweets)
-                            DispatchQueue.main.async {
-                                self.userData.viewDisplayed = .insightPage
-                            }
-                        }
+                        self.generateRealUProfile()
                     }
                 }) {
                     Text("Know the RealU") 
@@ -98,8 +90,35 @@ extension LoginPage {
             .background(Color.white)
             .cornerRadius(36)
         }
+        
+        /**
+         Generates RealU profile from UserData's twitter handle
+         
+         If the twitter handle can be reached, a RealU profile will be created for the tiwtter handle and presented to the user
+         If the tiwtter handle is not valid, or if it's private, then the user will be presented with an error page
+         */
+        private func generateRealUProfile() {
+            // change the screen to loading page
+            self.userData.viewDisplayed = .loadingPage
+            self.userData.loading = .tweets
+            
+            // call the API's to get the data
+            DispatchQueue.global().async {
+                // get the tweets
+                let tweets = fetchRecentTweets(fromHandle: self.userData.twitterHandle)
+                DispatchQueue.main.async {
+                    guard !tweets.isEmpty else { self.userData.viewDisplayed = .errorPage; return }
+                    self.userData.loading = .personalityProfile
+                }
+                
+                guard !tweets.isEmpty else { return }
+                self.userData.profile = fetchPersonalityInsightsFromTweets(tweets)
+                DispatchQueue.main.async {
+                    self.userData.viewDisplayed = .insightPage
+                }
+            }
+        }
     }
-    
 }
 
 

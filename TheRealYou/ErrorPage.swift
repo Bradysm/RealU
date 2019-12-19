@@ -11,9 +11,10 @@ import SwiftUI
 struct ErrorPage: View {
     var body: some View {
         ZStack {
-            Color.white
+            Color("PastelPink")
             ErrorCard()
-        }
+                .shadow(color: Color.gray.opacity(0.5), radius: 8)
+        }.edgesIgnoringSafeArea(.all)
         
     }
 }

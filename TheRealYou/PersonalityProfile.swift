@@ -42,7 +42,7 @@ struct PersonalityProfile: View {
                 PersonalInsight(showCards: self.$consumptionOpen, insightTitle: "Consumption", color1: Color("PastelYellow"), color2: Color("PastelGreen"),
                                 insights: self.userData.consumptionPreferences())
                 
-                BackToHomeButton(viewDisplayed: self.$userData.viewDisplayed)
+                HomeButton()
             }
                 .blur(radius: self.modalData.showModal ? 6 : 0.0) // blur background if modal is being shown
                 .animation(.easeInOut(duration: 0.5))
@@ -64,27 +64,30 @@ extension PersonalityProfile {
     /**
      Button which updates the state of the UI to send the user back to the login page
      */
-    struct BackToHomeButton: View {
-        @Binding var viewDisplayed: Display
+    struct HomeButton: View {
         @EnvironmentObject var userData: UserData
+        @EnvironmentObject var modalData: ModalData
         
         var body: some View {
             // button to send the user back to the main page
             Button(action: {
-                // update the userdata and then send to the main page
-                self.userData.twitterHandle = ""
-                self.userData.profile = nil
-                self.viewDisplayed = .mainPage
-                print("clicked")
+                // take them to home view if the modal is not up currently
+                if !self.modalData.showModal {
+                    self.userData.reset()
+                    self.modalData.reset()
+                }
             }) {
-                Text("Search New Handle")
-                    .foregroundColor(.white)
-                    .font(.headline)
-                    .padding()
-                    .background(Color("ButtonColor"))
-                    .cornerRadius(26)
-                    .padding(50)
-                    .shadow(color: Color.gray.opacity(0.5), radius: 8)
+                HStack {
+                    Spacer()
+                    Text("Search New Handle")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                    Spacer()
+                }
+                .padding(.vertical)
+                .realUButtonStyle()
+                .padding(.horizontal, 40)
+                .padding(.top)
                 
             }
         }
@@ -94,6 +97,6 @@ extension PersonalityProfile {
 
 struct PersonalityProfile_Previews: PreviewProvider {
     static var previews: some View {
-        PersonalityProfile().environmentObject(UserData())
+        PersonalityProfile().environmentObject(UserData()).environmentObject(ModalData())
     }
 }

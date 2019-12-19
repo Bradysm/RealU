@@ -57,8 +57,10 @@ struct InsightCard: View {
             .shadow(color: Color.gray.opacity(0.5), radius: 8)
             .onTapGesture() {
                 withAnimation {
-                    self.modalData.updateModal(title: self.content.getName(), str: self.insightDetail(), img: .consumption)
-                    self.modalData.showModal.toggle()
+                    if !self.modalData.showModal { // only update if a modal isn't currently up
+                        self.modalData.updateModal(title: self.content.getName(), str: self.insightDetail(), img: .consumption)
+                        self.modalData.showModal.toggle()
+                    }
                 }
         }
     } // end of body

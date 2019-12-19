@@ -55,7 +55,7 @@ final class ModalData: ObservableObject {
     /**
      resets the modal data to the default values
      */
-    public func resetModalData() {
+    public func reset() {
         self.showModal = false
         self.detail = "No Details Available"
         self.title = "Empty Title"

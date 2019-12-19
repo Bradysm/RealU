@@ -22,13 +22,6 @@ import SwiftUI
 final class UserData: ObservableObject {
     
     /**
-     States of laoding data
-     */
-    enum Loading {
-        case tweets, personalityProfile, completed
-    }
-    
-    /**
      Created profile from users tweets
      */
      var profile: Profile?
@@ -37,7 +30,7 @@ final class UserData: ObservableObject {
      String containing the twitter handle of the user
      */
     @Published var twitterHandle: String
-    @Published var loading: Loading
+    @Published var loading: LoadingStatus
     
     /**
      View to display to the user

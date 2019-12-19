@@ -13,6 +13,9 @@ import PersonalityInsights
  Represents row of insight for the viewer
  This will contain a scroll view of cards
  The view is a dropdown view that allows the user to click on the dropdown to show the cards
+ 
+ Insight: generic representing insight Data. Any data that conforms to CardContent and Hashable can be used within the personal insight
+    - this is used incase there is any future expansions within IBM watson and more insight data types can be produced
  */
 struct PersonalInsight<Insight: Hashable & CardContent>: View {
     @Binding var showCards: Bool
@@ -32,7 +35,7 @@ struct PersonalInsight<Insight: Hashable & CardContent>: View {
                     .imageScale(.medium)
                     .font(Font.title.weight(.medium))
                     .rotationEffect(self.showCards ? Angle(degrees: 180) : Angle(degrees: 0))
-                    .foregroundColor(self.showCards ? .blue : .black)
+                    .foregroundColor(self.showCards ? Color("ButtonColor") : .primary)
                     .onTapGesture {
                         withAnimation(Animation.spring()) { self.showCards.toggle() }
                 }
@@ -75,8 +78,8 @@ extension PersonalInsight {
                     
                     // this will push the last card
                     Capsule()
-                        .foregroundColor(.white)
-                        .background(Color.white)
+                        .foregroundColor(.clear)
+                        .background(Color.clear)
                         .frame(width: 50)
                     
                 } // end of HStack
