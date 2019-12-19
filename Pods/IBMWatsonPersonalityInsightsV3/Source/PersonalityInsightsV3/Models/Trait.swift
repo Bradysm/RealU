@@ -19,7 +19,7 @@ import Foundation
 /**
  The characteristics that the service inferred from the input content.
  */
-public struct Trait: Codable, Equatable {
+public struct Trait: Codable, Equatable, Hashable {
 
     /**
      The category of the characteristic: `personality` for Big Five personality characteristics, `needs` for Needs, and

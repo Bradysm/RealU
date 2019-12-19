@@ -14,8 +14,7 @@
 		231C69E0238F6D2500545BCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 231C69DF238F6D2500545BCB /* Preview Assets.xcassets */; };
 		231C69E3238F6D2500545BCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231C69E1238F6D2500545BCB /* LaunchScreen.storyboard */; };
 		231C69ED238F6EB900545BCB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 231C69EC238F6EB900545BCB /* Colors.xcassets */; };
-		231C69EF238F8BEC00545BCB /* IntelligenceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231C69EE238F8BEC00545BCB /* IntelligenceCard.swift */; };
-		231C69F4238F96A400545BCB /* IntelligenceScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231C69F3238F96A400545BCB /* IntelligenceScroll.swift */; };
+		231C69EF238F8BEC00545BCB /* InsightCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231C69EE238F8BEC00545BCB /* InsightCard.swift */; };
 		235F60902390A4DC00B9A6EA /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F608F2390A4DC00B9A6EA /* Modal.swift */; };
 		235F60932391CE1A00B9A6EA /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F60922391CE1A00B9A6EA /* Tweet.swift */; };
 		235F60952391CF3700B9A6EA /* TwitterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F60942391CF3700B9A6EA /* TwitterApi.swift */; };
@@ -23,6 +22,19 @@
 		235F609A2391E4B000B9A6EA /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F60992391E4B000B9A6EA /* LoginPage.swift */; };
 		235F609E23921FD000B9A6EA /* WatsonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F609D23921FD000B9A6EA /* WatsonApi.swift */; };
 		2382EA0523923D8600610664 /* DisplayEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2382EA0423923D8600610664 /* DisplayEnum.swift */; };
+		2388868C23A95AF00075D46E /* ModalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2388868B23A95AF00075D46E /* ModalData.swift */; };
+		2398774A23AAF33700725DB6 /* CardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398774923AAF33700725DB6 /* CardContent.swift */; };
+		2398775023AAF6FD00725DB6 /* TraitContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398774F23AAF6FD00725DB6 /* TraitContent.swift */; };
+		2398775223AB13CB00725DB6 /* ModalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398775123AB13CB00725DB6 /* ModalImage.swift */; };
+		2398775523AB140A00725DB6 /* ConsumptionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398775423AB140A00725DB6 /* ConsumptionContent.swift */; };
+		239EA83023A74AEE0078E007 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239EA82F23A74AEE0078E007 /* UserData.swift */; };
+		239EA83223A8445A0078E007 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239EA83123A8445A0078E007 /* LoadingScreen.swift */; };
+		239EA83523A84F490078E007 /* LoaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239EA83423A84F490078E007 /* LoaderController.swift */; };
+		23AED37923AB61690036DF77 /* ErrorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AED37823AB61690036DF77 /* ErrorPage.swift */; };
+		23AED37B23AB670E0036DF77 /* ErrorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AED37A23AB670E0036DF77 /* ErrorCard.swift */; };
+		23C3C8762394705000465770 /* PersonalInsight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3C8752394705000465770 /* PersonalInsight.swift */; };
+		23C3C878239470A400465770 /* InsightTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3C877239470A400465770 /* InsightTitle.swift */; };
+		23C3C87A23947E5100465770 /* PersonalityProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3C87923947E5100465770 /* PersonalityProfile.swift */; };
 		55434BECDC961C32A7BFF1DF /* Pods_TheRealYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785E296E2DAD130A94B30008 /* Pods_TheRealYou.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +48,7 @@
 		231C69E2238F6D2500545BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		231C69E4238F6D2500545BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		231C69EC238F6EB900545BCB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = SOURCE_ROOT; };
-		231C69EE238F8BEC00545BCB /* IntelligenceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelligenceCard.swift; sourceTree = "<group>"; };
-		231C69F3238F96A400545BCB /* IntelligenceScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelligenceScroll.swift; sourceTree = "<group>"; };
+		231C69EE238F8BEC00545BCB /* InsightCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCard.swift; sourceTree = "<group>"; };
 		235F608F2390A4DC00B9A6EA /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 		235F60922391CE1A00B9A6EA /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		235F60942391CF3700B9A6EA /* TwitterApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterApi.swift; sourceTree = "<group>"; };
@@ -45,6 +56,19 @@
 		235F60992391E4B000B9A6EA /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		235F609D23921FD000B9A6EA /* WatsonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonApi.swift; sourceTree = "<group>"; };
 		2382EA0423923D8600610664 /* DisplayEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEnum.swift; sourceTree = "<group>"; };
+		2388868B23A95AF00075D46E /* ModalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalData.swift; sourceTree = "<group>"; };
+		2398774923AAF33700725DB6 /* CardContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContent.swift; sourceTree = "<group>"; };
+		2398774F23AAF6FD00725DB6 /* TraitContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitContent.swift; sourceTree = "<group>"; };
+		2398775123AB13CB00725DB6 /* ModalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalImage.swift; sourceTree = "<group>"; };
+		2398775423AB140A00725DB6 /* ConsumptionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionContent.swift; sourceTree = "<group>"; };
+		239EA82F23A74AEE0078E007 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		239EA83123A8445A0078E007 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		239EA83423A84F490078E007 /* LoaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderController.swift; sourceTree = "<group>"; };
+		23AED37823AB61690036DF77 /* ErrorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPage.swift; sourceTree = "<group>"; };
+		23AED37A23AB670E0036DF77 /* ErrorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCard.swift; sourceTree = "<group>"; };
+		23C3C8752394705000465770 /* PersonalInsight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInsight.swift; sourceTree = SOURCE_ROOT; };
+		23C3C877239470A400465770 /* InsightTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightTitle.swift; sourceTree = "<group>"; };
+		23C3C87923947E5100465770 /* PersonalityProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityProfile.swift; sourceTree = "<group>"; };
 		2FE0F21042C539C279B6E3E8 /* Pods-TheRealYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRealYou.debug.xcconfig"; path = "Target Support Files/Pods-TheRealYou/Pods-TheRealYou.debug.xcconfig"; sourceTree = "<group>"; };
 		54DAB9242BDE041EB86C5080 /* Pods-TheRealYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRealYou.release.xcconfig"; path = "Target Support Files/Pods-TheRealYou/Pods-TheRealYou.release.xcconfig"; sourceTree = "<group>"; };
 		785E296E2DAD130A94B30008 /* Pods_TheRealYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheRealYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,22 +139,23 @@
 		231C69F0238F94BF00545BCB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				235F60972391CFC300B9A6EA /* ApiTokens.swift */,
 				2382EA0423923D8600610664 /* DisplayEnum.swift */,
-				235F609C23921EFC00B9A6EA /* Watson */,
-				235F60962391CF6C00B9A6EA /* Twitter */,
+				2388868D23A980B30075D46E /* API Data */,
+				2398774E23AAF6E600725DB6 /* Card Content */,
+				239EA82E23A74AD50078E007 /* Environment Data */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		235F60912391CDC200B9A6EA /* Preference View */ = {
+		235F60912391CDC200B9A6EA /* Preference Profile */ = {
 			isa = PBXGroup;
 			children = (
 				235F608F2390A4DC00B9A6EA /* Modal.swift */,
-				231C69EE238F8BEC00545BCB /* IntelligenceCard.swift */,
-				231C69F3238F96A400545BCB /* IntelligenceScroll.swift */,
+				23C3C87923947E5100465770 /* PersonalityProfile.swift */,
+				2398774823AAF25900725DB6 /* Insight */,
+				2398774723AAF24B00725DB6 /* Insight Card */,
 			);
-			name = "Preference View";
+			name = "Preference Profile";
 			sourceTree = "<group>";
 		};
 		235F60962391CF6C00B9A6EA /* Twitter */ = {
@@ -147,7 +172,10 @@
 			children = (
 				231C69DA238F6D2400545BCB /* ContentView.swift */,
 				235F60992391E4B000B9A6EA /* LoginPage.swift */,
-				235F60912391CDC200B9A6EA /* Preference View */,
+				239EA83323A84F320078E007 /* Loading Screen */,
+				235F60912391CDC200B9A6EA /* Preference Profile */,
+				23AED37A23AB670E0036DF77 /* ErrorCard.swift */,
+				23AED37823AB61690036DF77 /* ErrorPage.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -158,6 +186,70 @@
 				235F609D23921FD000B9A6EA /* WatsonApi.swift */,
 			);
 			name = Watson;
+			sourceTree = "<group>";
+		};
+		2388868D23A980B30075D46E /* API Data */ = {
+			isa = PBXGroup;
+			children = (
+				235F60972391CFC300B9A6EA /* ApiTokens.swift */,
+				235F60962391CF6C00B9A6EA /* Twitter */,
+				235F609C23921EFC00B9A6EA /* Watson */,
+			);
+			name = "API Data";
+			sourceTree = "<group>";
+		};
+		2398774723AAF24B00725DB6 /* Insight Card */ = {
+			isa = PBXGroup;
+			children = (
+				231C69EE238F8BEC00545BCB /* InsightCard.swift */,
+			);
+			name = "Insight Card";
+			sourceTree = "<group>";
+		};
+		2398774823AAF25900725DB6 /* Insight */ = {
+			isa = PBXGroup;
+			children = (
+				23C3C877239470A400465770 /* InsightTitle.swift */,
+				23C3C8752394705000465770 /* PersonalInsight.swift */,
+			);
+			name = Insight;
+			sourceTree = "<group>";
+		};
+		2398774E23AAF6E600725DB6 /* Card Content */ = {
+			isa = PBXGroup;
+			children = (
+				2398774923AAF33700725DB6 /* CardContent.swift */,
+				2398774F23AAF6FD00725DB6 /* TraitContent.swift */,
+				2398775423AB140A00725DB6 /* ConsumptionContent.swift */,
+			);
+			name = "Card Content";
+			sourceTree = "<group>";
+		};
+		2398775623AB14BB00725DB6 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				2398775123AB13CB00725DB6 /* ModalImage.swift */,
+				2388868B23A95AF00075D46E /* ModalData.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		239EA82E23A74AD50078E007 /* Environment Data */ = {
+			isa = PBXGroup;
+			children = (
+				2398775623AB14BB00725DB6 /* Modal */,
+				239EA82F23A74AEE0078E007 /* UserData.swift */,
+			);
+			name = "Environment Data";
+			sourceTree = "<group>";
+		};
+		239EA83323A84F320078E007 /* Loading Screen */ = {
+			isa = PBXGroup;
+			children = (
+				239EA83123A8445A0078E007 /* LoadingScreen.swift */,
+				239EA83423A84F490078E007 /* LoaderController.swift */,
+			);
+			name = "Loading Screen";
 			sourceTree = "<group>";
 		};
 		7343F9EFC82EF3C9D637F3EE /* Frameworks */ = {
@@ -296,14 +388,26 @@
 				235F60982391CFC300B9A6EA /* ApiTokens.swift in Sources */,
 				231C69D7238F6D2400545BCB /* AppDelegate.swift in Sources */,
 				231C69D9238F6D2400545BCB /* SceneDelegate.swift in Sources */,
+				2398775523AB140A00725DB6 /* ConsumptionContent.swift in Sources */,
+				239EA83023A74AEE0078E007 /* UserData.swift in Sources */,
+				2398775023AAF6FD00725DB6 /* TraitContent.swift in Sources */,
 				235F609A2391E4B000B9A6EA /* LoginPage.swift in Sources */,
+				2388868C23A95AF00075D46E /* ModalData.swift in Sources */,
+				23C3C8762394705000465770 /* PersonalInsight.swift in Sources */,
+				23C3C87A23947E5100465770 /* PersonalityProfile.swift in Sources */,
 				2382EA0523923D8600610664 /* DisplayEnum.swift in Sources */,
+				2398775223AB13CB00725DB6 /* ModalImage.swift in Sources */,
 				235F609E23921FD000B9A6EA /* WatsonApi.swift in Sources */,
-				231C69EF238F8BEC00545BCB /* IntelligenceCard.swift in Sources */,
+				23C3C878239470A400465770 /* InsightTitle.swift in Sources */,
+				239EA83523A84F490078E007 /* LoaderController.swift in Sources */,
+				231C69EF238F8BEC00545BCB /* InsightCard.swift in Sources */,
 				231C69DB238F6D2400545BCB /* ContentView.swift in Sources */,
+				2398774A23AAF33700725DB6 /* CardContent.swift in Sources */,
+				239EA83223A8445A0078E007 /* LoadingScreen.swift in Sources */,
+				23AED37923AB61690036DF77 /* ErrorPage.swift in Sources */,
 				235F60902390A4DC00B9A6EA /* Modal.swift in Sources */,
-				231C69F4238F96A400545BCB /* IntelligenceScroll.swift in Sources */,
 				235F60932391CE1A00B9A6EA /* Tweet.swift in Sources */,
+				23AED37B23AB670E0036DF77 /* ErrorCard.swift in Sources */,
 				235F60952391CF3700B9A6EA /* TwitterApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

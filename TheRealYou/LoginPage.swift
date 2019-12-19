@@ -9,22 +9,17 @@
 import SwiftUI
 
 /**
- Displayed upon app login
- 
- @Binding : handle - string being updated by textfield
- @Binding: viewDisplayed - variable that maintains the current view to display in the ContentView
+ Main card used to get the users twitter handle
+ This view will display a text field that will allow the user to enter in their handle and then click search
+ This will update the user data environment object to now contain the handle of the textfield
  */
 struct LoginPage: View {
-    @Binding var handle: String
-    @Binding var viewDisplayed: Display
-    
     
     var body: some View {
         ZStack {
             Color("PastelPink")
                 .edgesIgnoringSafeArea(.all)
-            
-            LoginCard(handle: self.$handle, viewDisplayed: self.$viewDisplayed)
+            LoginCard()
                 .padding(.horizontal, 36)
                 .shadow(color: Color.gray.opacity(0.5), radius: 8)
             
@@ -44,8 +39,9 @@ extension LoginPage {
      */
     struct LoginCard: View {
         @State var searched = false
-        @Binding var handle: String
-        @Binding var viewDisplayed: Display
+        
+        // get the user data from the environment
+        @EnvironmentObject var userData: UserData
         
         
         var body: some View {
@@ -55,7 +51,7 @@ extension LoginPage {
                     .font(.headline)
                     .multilineTextAlignment(.center)
                 
-                TextField("@elon", text: self.$handle)
+                TextField("@elon", text: self.$userData.twitterHandle)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: 200)
                     .padding(.horizontal, 50)
@@ -63,17 +59,26 @@ extension LoginPage {
                 
                 Button(action: {
                     withAnimation(Animation.interpolatingSpring(mass: 4, stiffness: 10, damping: 40, initialVelocity: 8)) {
-                        // TODO: Look at calling a closure
-                        let tweets = fetchRecentTweets(fromHandle: "garyvee")
-                        fetchPersonalityInsightsFromTweets(tweets)
-                        
-                        // update the states
-                        self.viewDisplayed = .insightPage
-                        self.searched.toggle()
-                        print("searching twtitter")
+                        self.userData.viewDisplayed = .loadingPage
+                        self.userData.loading = .tweets
+                        // call the API's to get the data
+                        DispatchQueue.global().async {
+                            // get the tweets
+                            let tweets = fetchRecentTweets(fromHandle: self.userData.twitterHandle)
+                            DispatchQueue.main.async {
+                                guard !tweets.isEmpty else { self.userData.viewDisplayed = .errorPage; return }
+                                self.userData.loading = .personalityProfile
+                            }
+                            
+                            guard !tweets.isEmpty else { return }
+                            self.userData.profile = fetchPersonalityInsightsFromTweets(tweets)
+                            DispatchQueue.main.async {
+                                self.userData.viewDisplayed = .insightPage
+                            }
+                        }
                     }
                 }) {
-                    Text("Know the RealU")
+                    Text("Know the RealU") 
                         .foregroundColor(.white)
                         .font(.headline)
                         .padding()
@@ -94,13 +99,13 @@ extension LoginPage {
             .cornerRadius(36)
         }
     }
-
+    
 }
 
 
 
 struct LoginCard_Previews: PreviewProvider {
     static var previews: some View {
-        LoginPage(handle: .constant(""), viewDisplayed: .constant(.mainPage))
+        LoginPage().environmentObject(UserData())
     }
 }

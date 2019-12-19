@@ -8,30 +8,46 @@
 
 import SwiftUI
 
-struct Modal<Content: View >: View {
-    @Binding var showModal: Bool
-    let content: Content // content of the modal
+struct Modal: View {
+    @EnvironmentObject var modalData: ModalData
     
     var body: some View {
+        
         ZStack {
-            RoundedRectangle(cornerRadius: 30)
-                .foregroundColor(Color.white)
-                .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color.gray.opacity(0.2), lineWidth: 1))
-                .shadow(color: Color.gray.opacity(0.4), radius: 4)
-            
-            ScrollView {
-                content
-            }.padding(.vertical, 40)
+            // set the white background
+            Color.white
             
             VStack {
+                Text("RealU Insight")
+                    .font(.title)
+                    .foregroundColor(Color("ButtonColor"))
+                    .fontWeight(.black)
+                    .padding(.top, 20)
+                
+                // scrollview with content
+                ScrollView {
+                    // creates the scroll view, width - 60
+                    self.generateContent()
+                }
+                .frame(height: 175)
+                
                 Spacer()
-                ModalButton(showModal: self.$showModal)
-            }.padding(.vertical)
-            
+                
+                // button to remove modal
+                ModalButton(showModal: self.$modalData.showModal)
+            }
         }
-        .padding(50)
+        .frame(width: UIScreen.main.bounds.width - 80, height: 350)
+        .cornerRadius(36)
+        .overlay(
+            RoundedRectangle(cornerRadius: 36)
+                .stroke(Color.gray.opacity(0.4), lineWidth: 1)
+        )
+        .padding(.horizontal)
+        
     }
 }
+
 
 extension Modal {
     
@@ -51,9 +67,9 @@ extension Modal {
                     .foregroundColor(.white)
                     .font(.headline)
                     .padding()
-                    .background(Color("ButtonColor"))
+                    .background(LinearGradient(gradient: Gradient(colors: [Color("ButtonColor"), Color("PastelGreen")]), startPoint: .leading, endPoint: .trailing))
                     .cornerRadius(26)
-                    .padding(50)
+                    .padding(.vertical, 20)
                     .shadow(color: Color.gray.opacity(0.5), radius: 8)
                 
             }
@@ -61,10 +77,44 @@ extension Modal {
     }
     
     
-}
+    /**
+     Generates the modals content and reutrns a view containing the content for the modal
+     */
+    func generateContent() -> some View {
+        return VStack {
+            // details header
+            HStack {
+                Text("Details")
+                    .font(.headline)
+                    .foregroundColor(.black)
+                    .opacity(0.5)
+                    
+                Spacer()
+            }
+            
+            // detail
+            HStack {
+              Text("\(self.modalData.detail)")
+                .font(.body)
+                .foregroundColor(.gray)
+                .multilineTextAlignment(.leading)
+                .padding(.top, 4)
+                .layoutPriority(1)
+                
+                Spacer()
+            }
+            
+        } // end of VStack
+        .padding(.horizontal, 20)
+    } // end of generate content
+    
+} // end of extension
+
+
+
 
 struct Modal_Previews: PreviewProvider {
     static var previews: some View {
-        Modal(showModal: .constant(false), content: Text("Content"))
+        Modal().environmentObject(ModalData())
     }
 }

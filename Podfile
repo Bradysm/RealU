@@ -7,4 +7,5 @@ target 'TheRealYou' do
 
   # Pods for TheRealYou
   pod 'IBMWatsonPersonalityInsightsV3', '~> 3.0.0'
+  pod 'NVActivityIndicatorView'
 end

@@ -19,7 +19,7 @@ import Foundation
 /**
  A consumption preference that the service inferred from the input content.
  */
-public struct ConsumptionPreferences: Codable, Equatable {
+public struct ConsumptionPreferences: Codable, Equatable, Hashable {
 
     /**
      The unique, non-localized identifier of the consumption preference to which the results pertain. IDs have the form

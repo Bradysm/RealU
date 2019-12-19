@@ -2,19 +2,25 @@ PODS:
   - IBMSwiftSDKCore (1.0.0)
   - IBMWatsonPersonalityInsightsV3 (3.0.0):
     - IBMSwiftSDKCore (~> 1.0.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
 
 DEPENDENCIES:
   - IBMWatsonPersonalityInsightsV3 (~> 3.0.0)
+  - NVActivityIndicatorView
 
 SPEC REPOS:
   trunk:
     - IBMSwiftSDKCore
     - IBMWatsonPersonalityInsightsV3
+    - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
   IBMSwiftSDKCore: 54ad77b03a4d27b218ba514580197db3b89a96ca
   IBMWatsonPersonalityInsightsV3: d2480fb881ca300dc67277d3b4194dfba5d5137d
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
 
-PODFILE CHECKSUM: d3a273d497c544e92c4db27fd82fe5653995fd47
+PODFILE CHECKSUM: ffebdb9ac6e1f204460f79674c70665f3293166c
 
 COCOAPODS: 1.8.4

@@ -12,28 +12,33 @@ import SwiftUI
  Main view of the application
  */
 struct ContentView: View {
+    // user data env object
+    @EnvironmentObject var userData: UserData
+    
     @State var twitterHandle: String = ""
     @State var searched: Bool = false
-    @State var viewDisplayed: Display = .mainPage
     
     var body: some View {
         VStack {
-            if self.viewDisplayed == .mainPage {
-                LoginPage(handle: self.$twitterHandle, viewDisplayed: self.$viewDisplayed)
-            }
-            else if self.viewDisplayed == .loadingPage {
-                Text("Loading Page")
-            }
-            else if self.viewDisplayed == .insightPage {
-                IntelligenceScroll(viewDisplayed: self.$viewDisplayed)
+            if self.userData.viewDisplayed == .mainPage {
+                LoginPage()
                     .animation(.easeInOut(duration: 1))
             }
-            else if self.viewDisplayed == .errorPage {
-                Text("Error Page")
+            else if self.userData.viewDisplayed == .loadingPage {
+                LoadingPage()
+            }
+            else if self.userData.viewDisplayed == .insightPage {
+                PersonalityProfile()
+                
+            }
+            else if self.userData.viewDisplayed == .errorPage {
+                ErrorPage()
             }
         }
     }
 }
+
+
 
 
 

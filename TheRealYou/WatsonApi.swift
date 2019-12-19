@@ -30,7 +30,11 @@ func fetchPersonalityInsightsFromTweets(_ tweets: [Tweet]) -> Profile? {
     let content = Content(contentItems:  tweets.map { ContentItem(content: $0.content, contenttype: $0.contenttype, language: $0.language) })
     let semaphore = DispatchSemaphore(value: 0)
     
-    personalityInsights.profile(profileContent: ProfileContent.content(content)) {
+    /**
+     Creates the personality profile using IBM Waatson's profile insights
+     Requests to also gain insights on the users consumption preferences
+     */
+    personalityInsights.profile(profileContent: ProfileContent.content(content), consumptionPreferences: true) {
         response, error in
         
         guard let profile = response?.result else {
