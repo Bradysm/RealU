@@ -6,7 +6,7 @@
 ***INSERT GRAPHIC HERE (include hyperlink in image)***
 
 # RealU
-> Emotional Intelligence iOS application allowing users to understand readers perspective of their twitter posts using IBM Watson personality profiler.
+> RealU is an iOS app allowing users to gain a greater emotional intelligence of patrons by utilizing their socail media presence to create a personalized profile of the patron detailing their personality, habits, and their consumer trends.
 
 **Badges will go here**
 
