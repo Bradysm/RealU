@@ -9,10 +9,11 @@
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-## Personlized Profile for every user**
+## Personlized Profile's
 
 [![realugraphic](https://github.com/Bradysm/RealU/blob/master/marketing/realuprofile.png)]()
 [![realugraphic](https://github.com/Bradysm/RealU/blob/master/marketing/insight.png)]()
+> Every RealU profile is crafted utilizing the most recent tweets from the target account. The text is analyzed using IBM watson and is then mapped into personality percentiles and consumer trends. Using these metrics you will have a greater emotional intelligence of the target user which will allow you to be more relatable :raised_hands:, close more business deals :moneybag:, and even better date ideas :wink:
 
 ---
 
