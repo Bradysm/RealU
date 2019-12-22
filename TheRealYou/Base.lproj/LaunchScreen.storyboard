@@ -15,23 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="XJi-dX-c5G">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="048-Kh-eNJ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RealULogo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="blz-v8-6h6">
-                                <rect key="frame" x="0.0" y="154" width="414" height="220"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="51z-KJ-tql">
+                                <rect key="frame" x="16" y="165" width="380" height="203"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="XJi-dX-c5G" firstAttribute="leading" secondItem="blz-v8-6h6" secondAttribute="leading" id="5uq-tq-t4p"/>
-                            <constraint firstItem="XJi-dX-c5G" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="B2Y-Bq-lVI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="blz-v8-6h6" secondAttribute="bottom" constant="488" id="CJz-3V-LUL"/>
-                            <constraint firstItem="blz-v8-6h6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fqw-St-zFM"/>
-                            <constraint firstItem="XJi-dX-c5G" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-44" id="gYq-01-NUH"/>
-                            <constraint firstItem="XJi-dX-c5G" firstAttribute="trailing" secondItem="blz-v8-6h6" secondAttribute="trailing" id="sMS-39-PsR"/>
-                            <constraint firstItem="blz-v8-6h6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vpd-Jj-uGX"/>
-                            <constraint firstItem="blz-v8-6h6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="yFR-zI-8zi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="51z-KJ-tql" secondAttribute="trailing" constant="18" id="1LL-RM-xUD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="51z-KJ-tql" secondAttribute="bottom" constant="494" id="Cm9-qP-LZs"/>
+                            <constraint firstItem="51z-KJ-tql" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mEo-UV-XpV"/>
+                            <constraint firstItem="51z-KJ-tql" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="vby-YO-qrY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -43,6 +40,6 @@
     </scenes>
     <resources>
         <image name="LaunchBackground" width="640" height="960"/>
-        <image name="RealULogo" width="270" height="281"/>
+        <image name="LaunchIcon" width="384" height="379"/>
     </resources>
 </document>
