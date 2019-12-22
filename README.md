@@ -1,18 +1,12 @@
-# RealU
-Emotional Intelligence application allowing users to understand readers perspective of their twitter posts.
+
 
 [![realugraphic](https://github.com/Bradysm/RealU/blob/master/marketing/homescreen.png)]()
 [![realugraphic](https://github.com/Bradysm/RealU/blob/master/marketing/loadingScreen.png)]()
 
 ***INSERT GRAPHIC HERE (include hyperlink in image)***
 
-# Repository Title Goes Here
-
-> Subtitle or Short Description Goes Here
-
-> ideally one sentence
-
-> include terms/tags that can be searched
+# RealU
+> Emotional Intelligence iOS application allowing users to understand readers perspective of their twitter posts using IBM Watson personality profiler.
 
 **Badges will go here**
 
