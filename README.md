@@ -17,13 +17,6 @@
 
 ---
 
-## Features
-## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
-
----
-
 ## Support
 
 Reach out to me at one of the following places!
